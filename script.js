@@ -82,6 +82,8 @@ const Game = (() => {
       alert("Please enter player names");
       return;
     }
+    document.querySelector("#player1").setAttribute("disabled", "");
+    document.querySelector("#player2").setAttribute("disabled", "");
 
     GameBoard.CreateBoard();
 
