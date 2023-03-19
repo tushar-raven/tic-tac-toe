@@ -10,6 +10,28 @@
   </head>
   <body>
     <h1>Tic Tac Toe</h1>
+    <p class="winner"></p>
     <div class="game-board"></div>
+    <div class="controls">
+      <form class="game-form">
+        <input
+          type="text"
+          id="player1"
+          name="player1"
+          placeholder="Player 1"
+          required
+        />
+        <input
+          type="text"
+          id="player2"
+          name="player2"
+          placeholder="Player 2"
+          required
+        />
+        <button type="submit">Start</button>
+      </form>
+      <button class="restart">Restart</button>
+      <button class="reset">Reset</button>
+    </div>
   </body>
 </html>

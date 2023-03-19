@@ -21,3 +21,15 @@ body {
   width: 500px;
   border: 1px solid black;
 }
+
+.game-board div {
+  display: flex;
+  font-size: 128px;
+  border: 1px solid black;
+  justify-content: center;
+  align-items: center;
+}
+
+.controls {
+  display: flex;
+}
