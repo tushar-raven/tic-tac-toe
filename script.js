@@ -91,8 +91,8 @@ const Game = (() => {
     gameForm.reset();
 
     players = [
-      (PlayerOne = Player(p1Name, "O")),
-      (PlayerTwo = Player(p2Name, "X")),
+      (PlayerOne = Player(p1Name, "X")),
+      (PlayerTwo = Player(p2Name, "O")),
     ];
     winner.textContent = `${PlayerOne.name} Vs ${PlayerTwo.name}`;
   };
