@@ -17,7 +17,6 @@ const GameBoard = (() => {
   const Update = (index, mark) => {
     if (!gameArray[index]) {
       gameArray[index] = mark;
-      console.log(gameArray);
       CreateBoard();
       CheckTie();
       CheckWinner();
@@ -70,7 +69,6 @@ const Game = (() => {
 
   const Start = (e) => {
     e.preventDefault();
-    console.log(gameOver);
     if (gameOver == true) {
       return;
     }
@@ -110,7 +108,6 @@ const Game = (() => {
 
   const declareWinner = () => {
     gameOver = true;
-    console.log(gameOver);
     winner.textContent = `${players[playerIndex]["name"]} Won!`;
   };
 
